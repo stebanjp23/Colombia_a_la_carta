@@ -1,0 +1,327 @@
+
+/* Estilo del cuerpo de la web */
+* {
+    margin-top: 0; /* Margen superior */
+    font-family: "Poppins", sans-serif; /* Fuente de la web */
+}
+
+body {
+    background-color: #fef9e7; /* Color del fondo de la web */
+}
+
+/* ------ Estilo del menú de navegación ------*/
+nav {
+    font-size: 18px; /* Tamaño del texto*/
+    background-color: #f9e79f; /* Color del fondo del menú de nav */
+    text-align: center; /* Centrar texto */
+    height: 120px; /* Alto del menú */
+}
+
+/* Estilo Logo */
+
+nav li .logo {
+    display: block;
+    width: 220px; /* Ancho */
+    padding: 5px; /* Margen interior */
+    margin-left: 50px;  /* Espaciado hacia la izquierda */
+}
+
+nav li {
+    list-style: none; /* Elimina el formato de lista */
+}
+
+nav ul {
+    display: flex; /* permite ordenar los elementos con libertad */
+    align-items: center; /* Centra verticalmente los elementos li */
+    justify-content: center; /* Centra horizontalmente los elementos li */
+}
+
+nav ul a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin-left: 50px; /* Espaciado hacia la izquierda */
+    color: #c74d01; /* Color del texto */
+}
+
+/* Estilo de los enlaces al pasar el cursor */
+nav ul a:hover {
+    color: #c74d01; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    font-size: 20px; /* Tamaño del texto */
+}
+
+/* FAVICON REDES */
+.redes {
+    width: 30px; /* ancho */
+    padding-top: 8px; /* Margen superior */
+}
+
+/* ------ Estilo del carrucel de imagenes------*/
+
+.Carrusel {
+    display: flex; /* permite ordenar los elementos con libertad */
+    align-items: center; /* alinea horizontalmente los elementos  */
+    justify-content: center; /* alinea verticalmente los elementos  */
+    width: 1280px; /* ancho del contenedor  */
+    height: 600px; /* alto del contenedor  */
+    margin: 10px auto; /* Establece un margen superior de 10 píxeles */
+    overflow: hidden;
+}
+
+.Carrusel ul {
+    display: flex; /* permite ordenar los elementos con libertad */
+    padding: 0; /* Elimina el padding predeterminado del <ul>, asegurando que no haya espacio extra alrededor. */
+    width: 100%; /* Ancho */
+    animation: movimiento 20s infinite alternate ease-in-out; /* Tiempo de la animación */
+}
+
+.Carrusel li {
+    width: 100%; width: 100%; /* Ancho */
+    list-style: none; /* Elimina el estilo de lista */
+    position: relative;
+}
+
+/* Animación del carrusel */
+@keyframes movimiento {
+    /* Primer elemento visible */
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    /* Segundo elemento visible */
+    30%,
+    50% {
+        transform: translateX(-100%);
+    }
+
+    /* Tercer elemento visible */
+    60%,
+    100% {
+        transform: translateX(-200%);
+    }
+
+}
+
+.text {
+    position: absolute; /* Permite colocar el texto en una posición específica dentro del elemento <li>. */
+    top: 220px; /* Ajusta la distancia desde la parte superior del contenedor. */
+    padding: 0 350px; /* Define espacio a los lados del texto*/
+    color: azure; /* Color de texto*/
+}
+
+
+.text h1 {
+    font-size: 90px; /* tamaño de texto*/
+}
+
+/* Estilo del contenedor botón */
+.Boton {
+    position: absolute; /* Permite posicionar el botón relativo al contenedor padre. */
+    top: 360px; /* Ajusta la distancia desde la parte superior del contenedor. */
+    left: 45%; /* Ajusta la distancia desde la parte izquierda del contenedor. */
+    background-color: #c74d01; /* Color del fondo del botón*/
+    width: 100px; /* Ancho del fondo del botón*/
+    height: 50px; /* Largo del fondo del botón*/
+    border-radius: 10px; /* Borde del botoón redondeado */
+}
+
+.Boton a {
+    display: flex;
+    /* Habilita flexbox en el enlace */
+    align-items: center;
+    /* Centra verticalmente el texto */
+    justify-content: center;
+    /* Centra horizontalmente el texto */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    height: 100%;
+    /* Para que el texto ocupe todo el botón */
+    width: 100%;
+    /* Para que el texto ocupe todo el botón */
+}
+
+/* Estlo del enlace al pasar el cursor */
+.Boton a:hover {
+    background-color: #ebe8ce; /* Color del fondor */
+    color: #c74d01; /* Color del texto */
+    border: 2px solid #c74d01; /* Color del borde y ancho */
+    border-radius: 10px; /* Borde redondeado */
+    font-weight: bold; /* negrita */
+}
+
+/* Estilo contenedor del Titulo Platos tipicos*/
+.box{
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin-bottom: 30px; /* alinea verticalmente el texto dentro del contenedor */
+}
+
+.box h2{
+    font-size: 30px; /* Tamaño del texto*/
+    margin: 0; /* Quita los márgenes por defecto */
+    text-transform: uppercase; /* Opcional: pone el texto en mayúsculas */
+}
+
+/* Estilo contenedor de la sección platos tipicos */
+.platos {
+    display: flex; /* organiza los elementos hijos horizontalmente*/
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 50px; /* Espaciado uniforme entre los elementos */
+    background-color: #aed6f1; /* Color de fondo */
+    height: 600px; /* altura del contenedor */
+    padding: 55px 60px; /* Añade espacio interno alrededor de los elemento */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+
+.plato { /* Estilo contenedor hijo del contenedor (platos y bebidas) */
+    position: relative; /* Permite posicionar elementos en relación al contenedor padre */
+    overflow: hidden; /* Oculta contenido que se desborde fuera del contenedor*/
+    text-align: center; /* Centra el texto*/
+    background-color: #fffcfc; /* Color fondo */
+    width: 410px; /* Ancho */
+    border-radius: 15px; /* Bordes redondeados  */
+    height: 620px; /* Altura */
+}
+
+/* Estilo imagenes platos tipicos */
+.img1 {
+    border-radius: 15px; /* Borde redendeado */
+    width: auto; /*Ancho */
+    height: 500px; /* Alto */
+    margin-top: 15px; /* Margen superior */
+}
+
+/* -------------- Estilo sección postres ------------ */
+
+.box_2{ /* estilo Contenedor del titulo de la sección (postres, bebidas, ubicación) */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-bottom: 20px; /* Margen vertical titulo sección */
+}
+
+.box_2 h2{
+    font-size: 30px; /* Tamaño titulo */
+    color: #000000; /* color texto */
+    text-transform: uppercase; /* texto en mayúsculas */
+}
+
+.Postre{ /* Contenedor padre postres */
+    display: flex; /* organiza los elementos hijos horizontalmente*/
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 2%; /* Espaciado uniforme entre los elementos */
+    width: auto; /* ancho */
+    height: auto; /* alto */
+    background-color: #e7f800; /* color fondo */
+    padding: 2%; /* Espaciado interior */
+    border-radius: 20px; /* Borde redondedo */
+}
+
+.pos{ /* Contenedor hijo postres */
+    position: relative; /* Permite posicionar elementos en relación al contenedor padre */
+    text-align: center; /* Alineación texto */
+    background-color: #fffcfc; /* color fondo */
+    width: 430px; /* ancho */
+    border-radius: 15px; /* Borde redondedo */
+    height: 420px;/* alto */
+}
+
+.pos h2{
+    padding: 20px; /* Alineación vertical */
+}
+
+.pos-img{ /* Estilo imagenes postres */
+    border-radius: 15px; /* Borde redondedo */
+    width: 400px; /* ancho */
+    height: 300px;/* alto */
+    margin-top: 15px; /* margen superior */
+}
+
+/* -------------- Estilo sección bebidas ------------ */
+
+.Bebidas { /* Contenedor padre bebidas */
+    display: flex; /* organiza los elementos hijos horizontalmente*/
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 50px; /* Espaciado uniforme entre los elementos */
+    background-color: #e5665a; /* Color fondo */
+    height: 600px; /* alto */
+    padding: 55px 60px; /* alineado interior */
+    border-radius: 20px; /* Borde redondedo */
+}
+
+/* ----- Estilo botones conedores hijos (platos tipicos y bebidas) -----*/
+
+.info { /* Contenedor boton */
+    background-color: #c74d01; /* Color fondo */
+    width: 70px; /* ancho */
+    padding: 8px; /* alineación interno */
+    margin-left: 38%; /* alineación hacia la izquierda */
+    border-radius: 10px; /* Borde redondedo */
+    margin-top: -10px; /* alineación superior */
+
+}
+
+.info a { /* Estilo enlace */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Color texto */
+}
+
+.info a:hover { /* Estilo enlace al pasar el cursor */
+    color: #c74d01; /* Color texto */
+    font-weight: bold; /* negrita*/
+}
+
+.info:hover { /* Estilo contenedor al pasar el cursor */
+    color: #c74d01; /* Color texto */
+    background-color: #fff69a; /* Color fondo */
+    border: 1px solid #c74d01; /* Color borde */
+}
+
+/* -------- Estilo sección mapá --------- */
+
+.mapa{ /* contenedor mapá */
+    width: 100%; /* ancho */
+    height: 300px; /* alto */
+}
+
+/* -------- Estilo para el pie de página --------- */
+
+footer { /* contenedor padre */
+    background-color: #f9e79f; /* Color fondo */
+    color: rgb(238, 4, 4); /* Color texto */
+    padding: 50px; /* alineación interna */
+    text-align: center; /* alineación texto */
+}
+
+
+.footer-logo { /* Contenedor logo*/
+    display: flex; /* organiza los elementos hijos horizontalmente*/
+    justify-content: center; /* organiza los elementos hijos verticalmente*/
+}
+
+.logo_f{ /* estilo imagen logo*/
+    width: 220px; /*ancho*/
+}
+
+.footer-info{ /* estilo contenedor información contacto*/
+    margin: 0 5px; /* alineación interna*/
+}
+
+.footer-legal {  /* estilo contenedor información LOGPD*/
+    margin: 10px 0; /* alineación interna*/
+}
+
+.footer-legal ul li { /* estilo lista información LOGPD*/
+    list-style: none; /* elimina el estilo lista*/
+    display:inline; /* alinea en una sola linea la lista*/
+    margin: 0 5px;/* alineación entre la lista*/
+}
+
+.footer-legal a { /* estilo enlaces información LOGPD*/
+    text-decoration: none;  /* elimina el subrayado enlaces*/
+    color: rgb(238, 4, 4); /*color enlaces*/
+    font-weight: bold; /*negrita*/
+}
+
+.footer-legal a:hover {  /* estilo enlaces información LOGPD al pasar el cursor*/
+    color: #cd6155; /*color enlaces*/
+}

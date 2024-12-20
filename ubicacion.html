@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta descripción: Ofrece un resumen atractivo del contenido de la página que puede aparecer en los resultados de búsqueda -->
+    <meta name="description"
+        content="Conoce nuestra historia y tradición culinaria. Estamos ubicados en Tarragona y Reus, ofreciendo los auténticos sabores de Colombia.">
+    <!-- Palabras clave para el SEO -->
+    <meta name="keywords" content="restaurante colombiano, cocina colombiana, Tarragona, Reus, sobre nosotros">
+
+    <!-- Tipo de fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/cuchilleria.png" type="image/x-icon"><!--Favicon-->
+    
+    <!--hojas de estilo-->
+    <link rel="stylesheet" href="css/inicio_estilo.css">
+    <link rel="stylesheet" href="css/ubi.css">
+    <title>Ubicación</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Carta.html">Carta</a></li>
+            <li><a href="menudia.html">Menú del día</a></li>
+            <li><img src="img/logo-remove.png" alt="" class="logo"></li>
+            <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="https://www.instagram.com/colombialacarta/" title="logotipo de instagram"><img
+                        src="img/instagram.png" alt="iconos-gratis" class="redes"></a></li>
+            <li><a href="https://es-es.facebook.com/colombiaalacartatarragona" title="logotipo de instagram"><img
+                        src="img/facebook.png" alt="iconos-gratis" class="redes"></a></li>
+        </ul>
+    </nav>
+
+    <section class="box">
+        <!-- Sección principal que contiene el formulario de contacto y la información de las ubicaciones -->
+
+        <h2>Contactanos</h2> <!-- Título de la sección -->
+
+        <div class="ubicaciones"> <!-- Contenedor que agrupa las dos ubicaciones: Tarragona y Reus -->
+
+            <!-- Información sobre la ubicación en Tarragona -->
+            <div class="Tarragona">
+                <h3>Colombia a la carta (Tarragona)</h3> <!-- Título de la ubicación -->
+
+                <!-- Formulario para enviar opiniones o sugerencias sobre el restaurante en Tarragona -->
+                <form action="PHP/form_tarragona.php" method="post">
+                    <label for="nom_t">Nombre</label> <!-- Etiqueta para el campo de nombre -->
+                    <input type="text" id="nom_t" name="nombre"><br> <!-- Campo de texto para el nombre -->
+
+                    <label for="email_t">Correo</label> <!-- Etiqueta para el campo de correo -->
+                    <input type="email" name="email" id="email_t"><br> <!-- Campo de correo electrónico -->
+
+                    <label for="opinion_t">Opinión o Sugerencia</label> <!-- Etiqueta para el campo de opinión -->
+                    <textarea name="opinion_t" id="opinion_t" rows="4" cols="50"></textarea><br>
+                    <!-- Campo de texto para la opinión -->
+
+                    <input type="submit" value="Enviar" id="button_t"> <!-- Botón para enviar el formulario -->
+                </form><br>
+
+                <!-- Mapa incrustado de la ubicación en Tarragona -->
+                <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                <p><strong>Dirección:</strong> Calle Reding, 37 Tarragona</p> <!-- Dirección en Tarragona -->
+                <p><strong>Contacto:</strong> 977 89 66 65</p> <!-- Número de contacto en Tarragona -->
+                <p><strong>Horarios:</strong> <br> Lunes-Jueves: 7:00 - 20:30 <br> Viernes-Domingo: 7:00 - 23:00 </p>
+                <!-- Horarios de atención en Tarragona -->
+            </div>
+
+            <!-- Información sobre la ubicación en Reus -->
+            <div class="Reus">
+                <h3>Colombia a la carta (Reus)</h3> <!-- Título de la ubicación -->
+
+                <!-- Formulario para enviar opiniones o sugerencias sobre el restaurante en Reus -->
+                <form action="PHP/form.reus.php" method="post">
+                    <label for="nom_r">Nombre</label> <!-- Etiqueta para el campo de nombre -->
+                    <input type="text" id="nom_r" name="nom_r"><br> <!-- Campo de texto para el nombre -->
+
+                    <label for="email_r">Correo</label> <!-- Etiqueta para el campo de correo -->
+                    <input type="email" name="email_r" id="email_r"><br> <!-- Campo de correo electrónico -->
+
+                    <label for="opinion_r">Opinión o Sugerencia</label> <!-- Etiqueta para el campo de opinión -->
+                    <textarea name="opinion_r" id="opinion_r" rows="4" cols="50"></textarea><br>
+                    <!-- Campo de texto para la opinión -->
+
+                    <input type="submit" value="Enviar" id="button"> <!-- Botón para enviar el formulario -->
+                </form><br>
+
+                <!-- Mapa incrustado de la ubicación en Reus -->
+                <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                <p><strong>Dirección:</strong> Av. Maria fortuny, 50 Reus</p> <!-- Dirección en Reus -->
+                <p><strong>Contacto:</strong> 877 07 77 22</p> <!-- Número de contacto en Reus -->
+                <p><strong>Horarios:</strong> <br> Lunes-Jueves: 7:00 - 20:30 <br> Viernes-Domingo: 7:00 - 23:00 </p>
+                <!-- Horarios de atención en Reus -->
+            </div>
+
+        </div>
+    </section><br>
+
+
+    <!--------------------------------------- Pie de pagina ------------------------------------------>
+    <footer>
+        <!-- Logo -->
+        <div class="footer-logo">
+            <img src="img/logo-remove.png" alt="Logotipo de Colombia a la Carta" class="logo_f">
+        </div>
+
+        <!-- Información -->
+        <div class="footer-info">
+            <p><strong>Dirección: </strong> Calle Reding, 37 Tarragona |<strong> Teléfono:</strong> 977 89 66 65
+                |<strong> Email:</strong> info@colombialacarta.com</p>
+        </div>
+
+        <!-- Enlaces legales -->
+        <div class="footer-legal">
+            <ul>
+                <li><a href="aviso.html">Aviso Legal</a></li>
+                <li><a href="politica.html">Política de Privacidad</a></li>
+                <li><a href="cookies.html">Política de Cookies</a></li>
+            </ul>
+        </div>
+
+        <!-- Información copy-->
+        <p>&copy; 2024 Colombia a la Carta</p>
+    </footer>
+
+
+
+</body>
+
+</html>

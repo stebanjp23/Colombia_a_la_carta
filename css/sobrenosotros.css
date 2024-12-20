@@ -1,0 +1,43 @@
+/* Estilo sección sobre nosotros */
+.sobre-nosotros {
+    background-color: #f7f1e3; /* Color de fondo */
+    padding: 40px 20px; /* Espaciado entre el contenido y el borde */
+    width: 70%; /* Ancho del contenedor */
+    height: 100%; /* Alto del contenedor */
+    margin: 20px auto; /* Espaciado entre el contenedor y el borde */
+    border-radius: 15px; /* Relleno de los bordes */ 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.sobre-nosotros h2 { /* Título de la sección */ 
+    text-align: center; /* Alineación del texto */
+    color: #e67e22; /* Color del texto */
+    font-size: 30px; /* Tamaño del texto */
+}
+
+.contenido { /* Contenedor padre dentro de la sección */
+    display: flex; /* Alineación de los elementos hacia la izquierda */
+    flex-wrap: wrap; /* Alineación de los elementos en varias filas */
+    gap: 20px; /* Espaciado entre los elementos */
+    align-items: center; /* Alineación de los elementos hacia el centro */
+}
+
+.texto { /* Contenedor de texto */
+    flex: 1 1 60%; /* Ancho del contenedor */
+    font-size: 18px; /* Tamaño del texto */
+    color: #555; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.imagen { /* Contenedor de imagen */
+    padding: 10px 50px; /* Espaciado entre el contenido y el borde */
+    text-align: center; /* Alineación del texto */
+}
+
+.imagen img { /* Imagen */
+    width: 100%; /* Ancho de la imagen */
+    max-width: 300px; /* Ancho máximo de la imagen */
+    border-radius: 10px; /* Relleno de los bordes */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+

@@ -1,0 +1,20 @@
+/* Estilo main, aplica para la web de aviso legal, politicas de privacidad y politica de cookies  */
+main{
+    background-color: #f7f1e3;
+    padding: 40px 20px;
+    width: 70%;
+    height: 100%;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1{ /* Estilo para el título */
+    text-align: center;
+    color: #e67e22;
+    font-size: 40px;
+}
+
+main h2{ /* Estilo para el subtítulo */
+    color: #4da6ff;
+}

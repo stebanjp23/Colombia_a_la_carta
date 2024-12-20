@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8"><!-- Define la codificación de caracteres para garantizar que el texto se muestre correctamente -->    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Hace que el diseño sea adaptable a diferentes tamaños de pantalla -->
+    <meta name="keywords" content="bandeja paisa, comida colombiana, jugos, mora, mango, caldos, carta, menudia,">  <!-- Palabras clave relevantes para el SEO -->
+    <meta name="author" content="Esteban 'Colombia a la carta'"> <!-- Información sobre el autor de la página -->
+
+    <!-- Links para estilos y fuentes -->
+    <link rel="stylesheet" href="css/inicio_estilo.css"><!-- Enlace a la hoja de estilos CSS externa para el diseño de la página -->
+    <!-- Enlace a la fuente "Poppins" desde Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> 
+    <!-- Favicon (ícono de la pestaña del navegador) -->    
+    <link rel="shortcut icon" href="img/cuchilleria.png" type="image/x-icon">
+    
+    <title>Colombia a la carta </title>
+
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Carta",
+              "item": "https://tu-dominio.com/Carta.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Menú del día",
+              "item": "https://tu-dominio.com/menudia.html"
+            }
+          ]
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- --------------------------------  Menú de navegación  -------------------------------------------------->
+    <nav>
+        <!-- Enlaces de las paginas a las que se puede acceder por medio del menú-->
+        <ul>
+            <li><a href="index.html">Inicio</a></li> <!--Pagina de inicio-->
+            <li><a href="Carta.html">Carta</a></li><!--Pagina de la carta (muestra los platos del restaurante)-->
+            <li><a href="menudia.html">Menú del día</a></li> <!--Pagina Menú dia (muestra el menú del dia)-->
+            <li><img src="img/logo-remove.png" alt="logo" class="logo"></li>
+            <!--Logotipo identificativo de la web y que representa al restaurante-->
+            <li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+            <!--Pagina sobre nostros (Contiene información sobre el restaurante)-->
+            <li><a href="ubicacion.html">Contactanos</a></li>
+            <!--Pagina de contactanos (Contiene un formulario de contacto y la ubicación del establecimiento)-->
+
+            <!--Redes de sociales con su respectivo enlace y logo -->
+            <li><a href="https://www.instagram.com/colombialacarta/" title="logotipo de instagram"><img
+                        src="img/instagram.png" alt="iconos-gratis" class="redes"></a></li>
+            <li><a href="https://es-es.facebook.com/colombiaalacartatarragona" title="logotipo de instagram"><img
+                        src="img/facebook.png" alt="iconos-gratis" class="redes"></a></li>
+
+        </ul>
+    </nav>
+
+    <!--------------------------------------- Carrusel de imagenes ----------------------- -->
+    <div class="Carrusel">
+        <ul>
+            <li> <!-- Cajon de la primera imagen -->
+                <img src="img/bienvenida.png" alt=""> <!-- Imagen de platos de comida varios -->
+                <div class="text"> <!-- Caja de texto-->
+                    <h1>Bienvenidos</h1> <!-- Texto de bienvenida para los usuarios-->
+                </div>
+                <div class="Boton"><!-- Contenedor de botón-->
+                    <a href="menudia.html">Menú</a> <!-- Link a el menú del dia -->
+                </div>
+            </li>
+            <li>
+                <img src="img/bandeja-paisa.jpg" alt="">
+                <!-- Imagen de una bandeja paisa, plato tradicional del corregimiento de antioquia-->
+            </li>
+            <li>
+                <img src="img/Mondongo2.png" alt=""><!-- Imagen de un plato de mondogo,plato tradicional del caribe  -->
+            </li>
+        </ul>
+    </div><br>
+
+    <!--------------------------------------- Sección de platos tipicos ------------------------------------------>
+    <section>
+        <div class="box">
+            <h2>Platos tipicos</h2>
+        </div> <!-- Texto que indica el contenido de la sección -->
+        <!-- Contenedor de imagenes alucivas a los platos tipicos-->
+        <div class="platos">
+
+            <!-- Contenedores en forma de tarjetas -->
+            <div class="plato">
+                <img src="img/Bandeja-paisa.png" alt="Plato 1" class="img1"><br>
+                <!-- Imagen1 aluciva al plato tipico, bandeja paisa-->
+                <h2>Bandeja paisa</h2><!-- Nombre del plato -->
+                <div class="info"><a href="Carta.html#BandejaP">Carta</a></div>
+                <!-- Botón lincado a la pagina carta y muestra el plato al que se hace referencia-->
+            </div>
+
+            <div class="plato">
+                <img src="img/Sudado-de-carne.png" alt="Plato 2" class="img1"><br>
+                <!-- Imagen2 aluciva al plato tipico, sudado-->
+                <h2>Sudado de carne</h2><!-- Nombre del plato -->
+                <div class="info"><a href="Carta.html#Sudado">Carta</a></div>
+                <!-- Botón lincado a la pagina carta y muestra el plato al que se hace referencia-->
+            </div>
+
+            <div class="plato">
+                <img src="img/Chuleta-Valluna.png" alt="Plato 2" class="img1"><br>
+                <!-- Imagen3 aluciva al plato tipico, chuleta valluna-->
+                <h2>Chuleta Valluna</h2><!-- Nombre del plato -->
+                <div class="info"><a href="Carta.html#Chuleta-Valluna">Carta</a></div>
+                <!-- Botón lincado a la pagina carta y muestra el plato al que se hace referencia-->
+            </div>
+        </div>
+    </section><br>
+
+    <!--------------------------------------- Sección de los postres ------------------------------------------>
+    <section>
+        <div class="box_2">
+            <h2>Postres</h2>
+        </div><!-- Texto que indica el contenido de la sección -->
+
+        <!-- Contenedor de imagenes alucivas a los tipos de postres-->
+        <div class="Postre">
+
+            <!-- Contenedores en forma de tarjetas -->
+            <div class="pos">
+                <img src="img/Arroz-con-Leche-Featured.jpg" alt="Arroz_leche" class="pos-img"><br>
+                <!-- Imagen1 Arroz con leche-->
+                <h2>Arroz con leche</h2> <!-- Nombre del prostre -->
+            </div>
+
+            <div class="pos">
+                <img src="img/mazamorra.jpg" alt="Mazamorra" class="pos-img"><br><!-- Imagen2 de la Mazamorra-->
+                <h2>mazamorra</h2><!-- Nombre del prostre -->
+
+            </div>
+
+            <div class="pos">
+                <img src="img/natilla.jpg" alt="Natilla" class="pos-img"><br><!-- Imagen3 de la natilla-->
+                <h2>Natilla</h2><!-- Nombre del prostre -->
+            </div>
+
+        </div>
+    </section><br>
+
+    <!--------------------------------------- Sección de las bebidas ------------------------------------------>
+    <section>
+
+        <div class="box_2">
+            <h2>Jugos Naturales</h2>
+        </div><!-- Texto que indica el contenido de la sección -->
+
+        <!-- Contenedor de imagenes alucivas a las bebidas-->
+        <div class="Bebidas">
+            <!-- Contenedores en forma de tarjetas -->
+            <div class="plato">
+                <img src="img/Jugo-mora.jpeg" alt="Plato 1" class="img1"><br> <!-- Imagen1, Jugo de mora con leche-->
+                <h2>Mora en leche</h2> <!-- Nombre de la bebida -->
+                <div class="info"><a href="Carta.html#jmora">Carta</a></div>
+                <!-- Botón lincado a la página carta, mostrando la ubicación de la bebida -->
+            </div>
+            <div class="plato">
+                <img src="img/jugo-mango.jpeg" alt="Plato 2" class="img1"><br><!-- Imagen2, Jugo de mango con leche-->
+                <h2>Mango en leche</h2><!-- Nombre de la bebida -->
+                <div class="info"><a href="Carta.html#jmango">Carta</a></div>
+                <!-- Botón lincado a la página carta, mostrando la ubicación de la bebida -->
+            </div>
+            <div class="plato">
+                <img src="img/Jugo-guana.jpeg" alt="Plato 2"
+                    class="img1"><br><!-- Imagen2, Jugo de guanabana con leche-->
+                <h2>Guanabana en leche</h2><!-- Nombre de la bebida -->
+                <div class="info"><a href="Carta.html#jguanabana">Carta</a></div>
+                <!-- Botón lincado a la página carta, mostrando la ubicación de la bebida -->
+            </div>
+        </div>
+    </section><br>
+
+    <!--------------------------------------- Sección Ubicaciónd del establecimiento ------------------------------------------>
+    <section>
+
+        <div class="box_2">
+            <h2>Encuentranos Aquí</h2>
+        </div> <!-- Titulo de la sección-->
+        <div> <!-- Contenedor del mapá con la ubicación del establecimiento-->
+            <!-- El codigo del mapa obtenido de Google Maps-->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.8340690909404!2d1.2451717755196232!3d41.116314812766234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a3fd2baeefa2e7%3A0x93b3a2b607bac6a6!2sRestaurant%20Colombia%20a%20la%20Carta!5e0!3m2!1sca!2ses!4v1732624961612!5m2!1sca!2ses"
+                style="border:0;" allowfullscreen="" loading="lazy" eferrerpolicy="no-referrer-when-downgrade"
+                class="mapa">
+            </iframe>
+        </div>
+    </section>
+
+    <!--------------------------------------- Pie de pagina ------------------------------------------>
+    <footer>
+        <!-- Logo -->
+        <div class="footer-logo">
+            <img src="img/logo-remove.png" alt="Logotipo de Colombia a la Carta" class="logo_f">
+        </div>
+
+        <!-- Información -->
+        <div class="footer-info">
+            <p><strong>Dirección: </strong> Calle Reding, 37 Tarragona |<strong> Teléfono:</strong> 977 89 66 65
+                |<strong> Email:</strong> info@colombialacarta.com</p>
+        </div>
+
+        <!-- Enlaces legales -->
+        <div class="footer-legal">
+            <ul>
+                <li><a href="aviso.html">Aviso Legal</a></li>
+                <li><a href="politica.html">Política de Privacidad</a></li>
+                <li><a href="cookies.html">Política de Cookies</a></li>
+            </ul>
+        </div>
+
+        <!-- Información copy-->
+        <p>&copy; 2024 Colombia a la Carta</p>
+    </footer>
+
+
+
+</body>
+
+</html>

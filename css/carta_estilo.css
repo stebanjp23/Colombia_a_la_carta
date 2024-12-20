@@ -1,0 +1,159 @@
+
+/* Estilo contenedor titulo */
+.Boxd {
+    margin-top: 20px; /* Espacio superior */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-bottom: 20px; /* Espacio entre el título y el resto de los elementos */
+}
+
+/* Estilo titulo */
+.titulo {
+    font-size: 30px; /* Ajusta el tamaño del título */
+    color: #000000; /* Color fuente */
+    margin: 0; /* Quita los márgenes por defecto */
+    text-transform: uppercase; /* texto en mayúsculas */
+}
+
+/* Estilo contenedor padre section desayunos*/
+.desayunos {
+    display: flex; /* Muestra los elementos en una sola fila */
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+    gap: 1%; /* Espacio entre los elementos */
+    width: auto; /* Ancho del contenedor */
+    height: auto; /* Alto del contenedor */
+    background-color: #aed6f1; /* Color de fondo */
+    padding: 4%; /* Espacio entre el contenido y el borde */
+    border-radius: 20px; /* Borde redondeado  */
+}
+
+/* Estilo contenedores hijo section desayunos */
+.ds {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    background-color: white; /* Color de fondo */
+    width: 23%; /* Ancho del contenedor */
+    border-radius: 25px; /* Borde redondeado */
+}
+
+.ds img { /* Estilo imagen */
+    border-radius: 15px; /* Borde redondeado*/
+    width: 89%; /* Ancho de la imagen */
+    height: auto; /* Alto de la imagen */
+    margin-top: 15px; /* Espacio superior */
+}
+
+.precio{ /* Estilo texto precio */
+    color: #dc7633;  /* Color fuente */
+    font-size: 20px; /* Tamaño fuente */
+    font-weight: bold; /* Fuente negrita */
+}
+
+/* Estilo contenedor de titulo */
+.Boxd2 { 
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-bottom: 20px; /* Espacio entre el título y el resto de los elementos */
+}
+
+.titulo2 { /* Estilo título */
+    font-size: 30px; /* Ajusta el tamaño del título */
+    color: #000000; /* Cambia el color si lo necesitas */
+    margin: 0; /* Quita los márgenes por defecto */
+    text-transform: uppercase; /* Opcional: pone el texto en mayúsculas */
+}
+
+/* Estilo contenedor padre section almuerzos */
+.almuerzos {
+    display: flex; /* Muestra los elementos en una sola fila */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la pantalla */
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+    gap: 2%; /* Espacio entre los elementos */
+    width: auto; /* Ancho del contenedor */
+    height: auto; /* Alto del contenedor */
+    background-color: #dc7633; /* Color de fondo */
+    padding: 2%; /* Espacio entre el contenido y el borde */
+    border-radius: 20px; /* Borde redondeado */
+}
+
+/* Estilo contenedores hijo section almuerzos */
+
+/* Estilo primera linea */
+.al {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    background-color: white; /* Color de fondo */
+    width: 21%; /* Ancho  */
+    height: auto; /* Alto */
+    border-radius: 25px; /* Borde redondeado */
+}
+
+.img-al { /* Estilo imagen */
+    border-radius: 15px; /* Borde redondeado */
+    width: 89%; /* Ancho de la imagen */
+    height: 65%; /* Alto de la imagen */
+    margin-top: 15px; /* Espacio superior */
+}
+
+/* Estilo segunda linea y tercera linea */
+.al2 {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    background-color: white; /* Color de fondo */
+    width: 21%; /* Ancho */
+    height: auto; /* Alto */
+    border-radius: 25px; /* Borde redondeado */
+    margin-top: 2%; /* Espacio superior */
+}
+
+.img-al2 { /* Estilo imagen */
+    border-radius: 15px; /* Borde redondeado */
+    width: 89%; /* Ancho de la imagen */
+    height: 59%; /* Alto de la imagen */
+    margin-top: 15px; /* Espacio superior */
+}
+
+/* Estilo sección bebidas */
+.Bebidas{ /* Estilo contenedor padre */
+    display: flex; /* Muestra los elementos en una sola fila */
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+    gap: 1%; /* Espacio entre los elementos */
+    width: auto; /* Ancho del contenedor */
+    height: auto; /* Alto del contenedor */
+    background-color: #fbff00; /* Color de fondo */
+    border-radius: 20px; /* Borde redondeado */
+}
+
+.bd{ /* Estilo contenedores hijo section bebidas */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    background-color: white; /* Color de fondo */
+    width: 20%; /* Ancho */
+    height: auto; /* Alto */
+    border-radius: 25px; /* Borde redondeado */
+    
+}
+
+/* Estilo imagenes bebidas */
+.img-bb{  
+    border-radius: 15px; 
+    width: 89%; 
+    height: 60%;    
+    margin-top: 15px;
+}
+
+.img-bb2{
+    border-radius: 15px;
+    width: 89%;
+    height: 60%;
+    margin-top: 15px;
+    background-color: #f99fc9;
+}
+
+.img-bb3{
+    border-radius: 15px;
+    width: 89%;
+    height: 60%;
+    margin-top: 15px;
+    background-color: #f99ff8;
+}
+
+/* Estilo pie de pagina*/
+footer{
+    margin-top: -1%;
+    height: auto;
+}

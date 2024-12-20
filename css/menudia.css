@@ -1,0 +1,47 @@
+/*Estilo seccion menu del dia*/
+.menu-dia {
+    background-color: #f7f1e3; /*Color de fondo*/
+    padding: 20px; /*Espacio entre el contenido y el borde*/
+    border-radius: 15px; /*Bordes redondeados*/
+    max-width: 600px; /*Ancho máximo*/
+    margin: 20px auto; /*Espacio entre el contenido y el borde*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*Sombra para dar profundidad*/
+    text-align: center; /*Alineación del texto*/
+}
+
+.menu-dia h2 { /*Estilo para el título*/
+    font-size: 2em; /*Tamaño de la fuente*/
+    color: #e67e22; /*Color del texto*/
+    margin-bottom: 10px; /*Espacio entre el título y el contenido*/
+}
+
+.menu-opciones { /*Estilo contenedor principal */
+    display: flex; /*Disposición en fila*/
+    flex-wrap: wrap; /*Pasar a la siguiente fila si no hay espacio*/
+    gap: 15px; /*Espacio entre los elementos*/
+    justify-content: center; /*Alineación horizontal*/
+}
+
+.opcion { /*Estilo contenedor hijos para cada opción */
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+}
+
+.opcion h3 { /*Estilo para el título de cada opción */
+    color: #34495e; /*Color del texto*/
+    margin-bottom: 5px; /*Espacio entre el título y el contenido*/
+}
+
+.opcion p { /*Estilo para el texto de cada opción */
+    color: #555; /*Color del texto*/
+}
+
+.precio { /*Estilo para el precio */
+    font-size: 25px; /*Tamaño de la fuente*/
+    color: #16a085; /*Color del texto*/
+    margin-top: 15px;  /*Espacio entre el precio y el contenido*/
+    font-weight: bold; /*Negrita para el precio*/
+}
